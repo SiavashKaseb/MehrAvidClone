@@ -1,0 +1,149 @@
+/* add font */
+@font-face {
+  font-family: IranSans;
+  src: url("../fonts/IRANSansWeb_Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IranSans";
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.main-list {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.itemOne:hover {
+  color: #cf2e2e;
+}
+
+.list-item1:hover .dropDown {
+  display: block;
+}
+
+.list-item:hover .dropDown {
+  display: block;
+}
+
+.arrow {
+  border: solid #cf2e2e;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+nav li i {
+  margin: 0 5px;
+}
+
+.dropDown {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropDown li {
+  list-style: none;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.border {
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.list-hover li {
+  list-style: none;
+}
+
+.list-hover li:hover {
+  color: #cf2e2e;
+  transition: 0.1s;
+}
+
+.listHover li:hover{
+  color: #cf2e2e;
+  transition: 0.1s;
+}
+
+.list-hover a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.list-hover {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px;
+}
+
+.list-group {
+  margin: 0 10px;
+}
+
+.list-group2 {
+  display: flex;
+}
+
+.dropDown2 {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  left: 20%;
+}
+
+.list-item2:hover .dropDown2 {
+  display: block;
+}
+
+.dropDown1 {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  left: 10%;
+}
+
+.list-item1:hover .dropDown1 {
+  display: block;
+}
