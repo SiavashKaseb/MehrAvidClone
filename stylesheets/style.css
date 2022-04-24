@@ -4,9 +4,9 @@
   src: url("../fonts/IRANSansWeb_Medium.ttf");
 }
 
-
 /* change selection color */
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #f5f5f5;
   background: #cf2e2e;
 }
@@ -15,7 +15,6 @@
   color: #f5f5f5;
   background: #cf2e2e;
 }
-
 
 * {
   margin: 0;
@@ -204,13 +203,12 @@ nav li i {
   background-color: #252627;
 }
 
-.items{
+.items {
   width: 80%;
   position: relative;
   margin-top: 20px;
   margin-right: 8.5rem;
 }
-
 
 .banner-cover2 {
   width: 45%;
@@ -272,7 +270,26 @@ nav li i {
   padding: 3px;
 }
 
+.arrowLeftGray {
+  border: solid lightgray;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrowLeft1 {
+  border: solid gray;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
 .Left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.Left1 {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
@@ -289,20 +306,20 @@ nav li i {
   display: inline-block;
 }
 
-.box-banner2{
+.box-banner2,
+.box-banner4,
+.newBox_text {
   padding: 20px;
 }
 
-.box-banner4{
-  padding: 20px;
-}
-
-.box-banner3{
+.box-banner3 {
   padding: 20px;
   margin-right: 20px;
 }
 
-.box-banner3 h2 , p , a {
+.box-banner3 h2,
+p,
+a {
   text-align: start;
 }
 
@@ -326,12 +343,15 @@ nav li i {
   border: none;
 }
 
-
-.banner2 , .banner3 , .banner4 {
+.banner2,
+.banner3,
+.banner4 {
   border-radius: 5px;
 }
 
-.banner2 img , .banner3 img , .banner4 img {
+.banner2 img,
+.banner3 img,
+.banner4 img {
   border-radius: 5px;
 }
 
@@ -370,7 +390,7 @@ nav li i {
 .item a svg {
   margin-top: 25%;
 }
-.item{
+.item {
   background-color: #252627;
   width: 250px;
   height: 25rem;
@@ -379,16 +399,17 @@ nav li i {
   flex-direction: column;
 }
 
-.item , .item a {
+.item,
+.item a {
   border-radius: 5px;
 }
 
-.item-group{
+.item-group {
   display: flex;
   justify-content: space-between;
 }
 
-.item-textBox{
+.item-textBox {
   text-align: center;
   padding: 20px;
   color: #f5f5f5;
@@ -399,4 +420,180 @@ nav li i {
   font-size: 15px;
 }
 
+.boxNew {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
 
+.boxNew h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.boxNew a , .BlogBox a {
+  margin: 20px 0 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.newBox_banner1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ffffffff;
+  width: 80%;
+  margin-right: 8.5rem;
+}
+
+.newBox_banner1 img {
+  width: 40%;
+  transition: transform 0.5s ease;
+}
+
+.newBox_banner1,
+.newBox_banner1 img {
+  border-radius: 5px;
+}
+
+/* .newBox_banner1 img:hover {
+  transform: scale(1.1);
+} */
+
+.newBox_text a {
+  text-align: start;
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  font-family: "IranSans";
+}
+
+.newBox_text a:hover,
+.newBox_group1 h3:hover,
+.newBox_group2 h3:hover {
+  color: lightslategray;
+  transition: 0.3s;
+}
+
+.newBox_text p {
+  margin-top: 25px;
+  font-size: 14px;
+  text-align: start;
+}
+
+.newBox_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newBox_date p {
+  font-size: 12px;
+  color: gray;
+  cursor: pointer;
+}
+
+.newBox_date span {
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.newBox_group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin-right: 8.5rem;
+}
+
+.newBox_group1 {
+  width: 45%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ffffffff;
+  height: 40%;
+}
+
+.newBox_group1 img {
+  width: 40%;
+  height: 100%;
+}
+
+.newBox_group1,
+.newBox_group1 img {
+  border-radius: 5px;
+}
+
+.newBox_group1 h3 {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.newBox_group2 {
+  width: 45%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ffffffff;
+  height: 40%;
+}
+
+.newBox_group2 img {
+  width: 40%;
+  height: 100%;
+}
+
+.newBox_group2,
+.newBox_group2 img {
+  border-radius: 5px;
+}
+
+.newBox_group2 h3 {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.boxNew a , .BlogBox a {
+  text-decoration: none;
+  color: gray;
+}
+
+
+.see_news{
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.BlogBox {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.BlogBox h2 {
+  text-align: center;
+}
+
+.BlogGroup {
+  width: 80%;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 8.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BlogGroup_item1,
+.BlogGroup_item2 , .BlogGroup_item3 {
+  width: 350px;
+  height: 350px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  
+}
+
+.BlogGroup_item1 img,
+.BlogGroup_item2 img,
+.BlogGroup_item3 img {
+  width: 100%;
+  border-radius: 5px;
+}
