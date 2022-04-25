@@ -597,3 +597,45 @@ a {
   width: 100%;
   border-radius: 5px;
 }
+
+
+.podcastBox{
+  width: 80%;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 8.5rem;
+  background-color: #f5f5f5;
+}
+
+.podcastBox h2 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+
+.podcast_text{
+  border-radius: 5px;
+  display: flex;
+  width: 48%;
+  flex-direction: row-reverse;
+  background-color: #252627;
+}
+
+.podcast_text img{
+  border-radius: 5px;
+  width: 35%;
+  height: 150px;
+}
+
+.podcast_text h3 {
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14.5px;
+  margin-top: 10px;
+}
+
+.podcastGroup {
+  display: flex;
+  justify-content: space-between;
+}
