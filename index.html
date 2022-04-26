@@ -183,6 +183,10 @@
                 </button>
             </div>
         </div>
+        <div  class="contact" onclick="mdOpen()">
+            <img src="./images/icons/messageIcon.svg" alt="message icon">
+            <span>تماس</span>
+        </div>
         <div class="banner2">
             <div class="box-banner2">
                 <h2 class="white">با خیال راحت پخش کنید</h2>
@@ -201,7 +205,35 @@
                 </button>
             </div>
         </div>
-        <div class="banner4">
+
+        <div id="modal" class="modal">
+
+            <div class="modal-content">
+                <span id="close" class="close" onclick="closeBtn()" >&times;</span>
+                
+                <div class="boxContact">
+                    <div class="rightBoxContact">
+                        <h3>تماس با ما:</h3>
+                        <ul>
+                            <li>فروش: ۰۲۱-۸۵۲۰</li>
+                            <li>پشتیبانی تهران: ۰۲۱-۸۴۲۰۵۲۰۲-۴</li>
+                            <li>آموزش: ۰۲۱-۸۴۲۰۵۱۱۱</li>
+                            <li>منابع انسانی: ۰۲۱-۸۳۳۸۲۰۲۳</li>
+                        </ul>
+                        <p class="blackText">برای دسترسی به شماره‌های تماس شهرستان‌ها به این <a href="#">صفحه</a> مراجعه کنید.</p>
+                    </div>
+                    <div class="borderPipe"></div>
+                    <div class="leftBoxContact">
+                        <img src="./images/icons/mail.svg" alt="mail icon">
+                        <h3>سوال‌ها، بازخوردها و نظرات‌تان را با ما در میان بگذارید:</h3>
+                        <button>فرم تماس</button>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div id="rtttt" class="banner4">
             <div class="box-banner4">
                 <h2 class="white">هوشمندانه و سریع تصمیم بگیرید</h2>
                 <p class="white">راهکارها و نرم افزار های همکاران سیستم متناسب با کسب و کار خرده فروشی</p>
@@ -529,6 +561,7 @@
         </div>
     </footer>
 
+    <script src="./script/app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
@@ -550,6 +583,5 @@
         },
       });
     </script>
-    <script src="./script/app.js"></script>
 </body>
 </html>

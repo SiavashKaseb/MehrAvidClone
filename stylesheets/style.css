@@ -80,7 +80,7 @@ nav li i {
   z-index: 10;
 }
 
-.dropDown li {
+.dropDown li , .list-hover li , .rightBoxContact li {
   list-style: none;
 }
 
@@ -99,9 +99,7 @@ nav li i {
   margin-left: 5px;
 }
 
-.list-hover li {
-  list-style: none;
-}
+
 
 .list-hover li:hover {
   color: #cf2e2e;
@@ -652,7 +650,7 @@ a {
   background-color: #ffffff;
 }
 
-.products h2 {
+.products h2 , .leftBoxContact {
   text-align: center;
 }
 
@@ -738,10 +736,9 @@ a {
 footer {
   width: 100%;
   background-color: #252627;
-
 }
 
-.boxLinkFooter{
+.boxLinkFooter {
   display: flex;
   justify-content: space-between;
   margin: 50px 40px 0 40px;
@@ -753,7 +750,7 @@ footer {
   color: #ffffff;
 }
 
-.boxLinkFooter a:hover{
+.boxLinkFooter a:hover {
   color: #cf2e2e;
   transition: 0.3s;
 }
@@ -763,7 +760,8 @@ footer {
   font-size: 15px;
 }
 
-.boxLinkFooter h4 , p {
+.boxLinkFooter h4,
+p {
   color: #ffffff;
 }
 
@@ -771,8 +769,7 @@ footer {
   margin-top: 20px;
 }
 
-
-.boxJoin{
+.boxJoin {
   width: 19rem;
 }
 
@@ -800,10 +797,108 @@ footer {
   padding: 10px;
   color: whitesmoke;
 }
-.copyright{
+.copyright {
   direction: ltr;
 }
 
-.textTitle{
+.textTitle {
   color: #252627;
+}
+
+.contact {
+  background-color: #0273e3;
+  position: fixed;
+  left: 15px;
+  top: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  width: 45px;
+  height: 65px;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact span {
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blackText{
+  color: black;
+}
+
+.boxContact{
+  display: flex;
+  justify-content: space-between;
+}
+
+.borderPipe{
+  width: 1px;
+  background-color: #94979b;
+  border: 1px #94979b solid;
+}
+
+.rightBoxContact , .leftBoxContact{
+  padding: 15px;
+}
+
+.rightBoxContact a {
+  text-decoration: none;
+  color: #94979b;
+}
+
+.rightBoxContact a:hover {
+  color: #cf2e2e;
+  transition: 0.3s;
+}
+
+.leftBoxContact button {
+  background-color: #0273e3;
+  font-family: "IranSans";
+  border: none;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.leftBoxContact img {
+  width: 50px;
+  height: 50px;
 }
